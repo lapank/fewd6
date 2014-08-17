@@ -451,28 +451,3 @@ To include it into your projects, just add it as a link your head tag BEFORE you
 23
 24
 25
-<!DOCTYPE html>
-<html>
-    <head>
-        <!-- This sets the language of the page, allowing special characters to load -->
-        <meta charset="UTF-8">
-        
-        <!-- The title tag gives your page a nice title in the tab (and for Google Searches, etc.)! -->
-        <title>My Page</title>
-        
-        <!-- 
-        Normalize is a CSS reset, which I discuss in a post here:
-        http://fewd.io/practice/css-resets-what-they-are-why-we-use-them/
-        -->
-        <link rel="stylesheet" href="css/normalize.css">
-        
-        <!-- 
-        Here we have the link tag which includes how that link relates to the page (rel) and the where the
-        link can be found (href).
-        -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <h1>Visual Elements</h1>
-    </body>
-</html>
