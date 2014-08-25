@@ -1,0 +1,192 @@
+/* You will get to love this come Wednesday! */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body{
+	font-family:"Lato";
+	margin:0;
+	color:#000;
+}
+
+.ghost_header{
+	height:44px;
+	display:block;
+	width:100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+li{
+	list-style: none;
+}
+
+.top_bar {
+	background-color:#fff;
+	top:0;
+	position:fixed;
+	height:44px; /* 44px / 16px = em value */
+	border-bottom: 5px solid #000;
+	text-align:right;
+	width:100%;
+	z-index:9;
+}
+
+.top_nav > a {
+	color: #000;
+	display: inline-block;
+	line-height: 39px;
+	padding-right:20px;
+	text-transform: uppercase;
+	font-size:20px;
+}
+
+.logo{
+	position:absolute;
+	top: 4px;
+	left:20px;
+	z-index:10;
+}
+
+.gallery{
+	width:100%;
+	position:relative;
+	display:block;
+	overflow:hidden;
+	height:800px;
+}
+
+.window {
+	width:25%;
+	position:relative;
+	display:inline-block;
+	height:100%;
+	overflow:hidden;
+	background-color:#000
+}
+	.window>a>img{
+		margin: 0 auto;
+		position:absolute;
+	}
+
+	.window>a{
+		opacity:0.8;
+	}
+
+	.window>a:hover{
+		opacity:1;
+	}
+
+	.wedding_img{
+		right:-545px;
+	}
+
+	.headshots_img{
+		right:-460px;
+	}
+
+	.music_img{
+		right:-545px;
+	}
+
+	.art_img{
+		right:-600px;	
+	}
+
+	.window>a>nav{
+		margin-top:580px;
+		position:absolute;
+		height:44px;
+		width:100%;
+		background-color:#fff;
+ 		text-transform: uppercase;
+ 		font-size:20px;
+ 		text-align: center;
+ 		line-height:39px;
+ 		border-bottom: 5px solid #000;
+ 		opacity:0.8;
+		color:#000;
+	}
+.black_bar{
+	height:44px;
+	display:block;
+	background-color:#000;
+	position:static;
+}
+
+#about{
+	background-color:#fff;
+	position:relative;
+	height:544px;
+	overflow:hidden;
+}
+
+	.container{
+		width:1000px;
+		margin: 0 auto;
+		position:relative;
+		background-size:contain;
+	}
+	.container>img{
+		position: absolute;
+		width:500px;
+
+	}
+	.container>.ryan_face:hover{
+		display:none;
+	}
+	.text_container{
+		float:right;
+		width:500px;
+	}
+
+.tab{
+	background-color:#000;
+	margin-left:100px;
+	position:absolute;
+	z-index:10;
+	color:#fff;
+	padding:10px;
+}
+
+.second_container{
+	background-size:contain;
+	display:block;
+	overflow:hidden;
+	background-color:#000;
+}
+	.first_img_wedding{
+		width:50%;
+		display:inline-block;
+	}
+	.second_img_wedding{
+		width:25%;
+		display:inline-block;
+	}
+	.stacked_img{
+		background-size:contain;
+		display:inline-block;
+		overflow:hidden;
+		width:25%;
+	}
+		.third_img_wedding{
+			display:block;
+			width:100%;
+		}
+		.fourth_img_wedding{
+			display:block;
+			width:100%;
+		}
