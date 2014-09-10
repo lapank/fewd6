@@ -1,0 +1,30 @@
+body{
+
+	font-family:lato;
+}
+
+h1 a{
+	color:#D00;
+}
+
+a{
+	text-decoration: none;
+}
+
+header nav a{
+	color:#444;
+	text-align: center;
+}
+
+header a:hover{
+	color:#BBB;
+}
+
+footer a{
+color:#D00;
+text-align: center;
+}
+
+footer a:hover{
+	color:#A00;
+}

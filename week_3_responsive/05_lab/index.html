@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ryan Lynch Photography</title>
 		<link rel="stylesheet" href="css/photo_site.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -7,9 +8,6 @@
 
 
 	<body>
-
-		<div class="ghost_header"></div>
-
 		<header class="top_bar">
 			<a href="#top" class="logo"> 
 				<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/logo.png">
@@ -22,34 +20,35 @@
 		</header>
 
 
+
 		<section class="gallery">
-			<div class="window">
-				<a href="#weddings">
-					<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/main.jpg" alt="people making out" class="wedding_img">
+				<a href="#weddings" class="col_one-four">
+					<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/main.jpg" alt="people making out" class="wedding_img absolute">
 					<nav>Wedding</nav>
 				</a>
-			</div><div class="window">
-				<a href="#headshots">
-					<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/headshots/main.jpg" alt="crying man" class="headshots_img">
+				<a href="#headshots" class="col_one-four">
+					<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/headshots/main.jpg" alt="crying man" class="headshots_img absolute">
 					<nav>Headshots/Portraits</nav>
 				</a>
-			</div><div class="window">
-				<a href="#music">
-					<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/music/main.jpg" alt="soulful musician" class="music_img">
+				<a href="#music" class="col_one-four">
+					<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/music/main.jpg" alt="soulful musician" class="music_img absolute">
 					<nav>Music</nav>
 				</a>
-			</div><div class="window">
-				<a href="#art">
-					<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/art/main.jpg" alt="really cool leather jacket" class="art_img">
+				<a href="#art" class="col_one-four">
+					<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/art/main.jpg" alt="really cool leather jacket" class="art_img absolute">
 					<nav>Everything Else</nav>
 				</a>
-			</div>
 		</section>
-		<section id="about">
-			<div class="black_bar"></div>
+
+
+
+
+		<section id="about" class="black_border">
 			<div class="container">
-				<img class="ryan_silly_face" src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/ryan_2.jpg" alt="Ryan Lynch making a silly face">
-				<img class="ryan_face" src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/ryan_1.jpg" alt="Ryan Lynch">
+				<div class = "ryan_image_container">
+					<img class="ryan_silly_face" src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/ryan_2.jpg" alt="Ryan Lynch making a silly face">
+					<img class="ryan_face" src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/ryan_1.jpg" alt="Ryan Lynch">
+				</div>
 				<div class="text_container">
 					<h1>Who is this Ryan guy anyway...</h1>
 					<p>Ryan is a software developer, but he also owns a camera. He takes pictures; sometimes for money and sometimes for fun. Here's Ryan's Photography Preference Profile (PPP):
@@ -57,16 +56,135 @@
 				</div>
 			</div>
 		</section>
-		<section id="weddings">
-			<div class="black_bar"></div>
-			<div class="tab">Weddings</div>
-			<div class="second_container">
-				<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/main.jpg" alt="kissing" class = "first_img_wedding"><img 
-				class = "second_img_wedding" src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/1.jpg" alt="walking through grass"><div class="stacked_img">
-					<img class = "third_img_wedding" src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/2.jpg" alt="man danceing">
-					<img class = "fourth_img_wedding" src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/3.jpg" alt="couple danceing">
+
+
+		<main id="gallery">	
+			<section id="weddings" class="black_border second_container clearfix">
+				<div class="tab">Weddings</div>
+					<div class="first_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/main.jpg" alt="kissing" class="gallery_img">
+						<div class="caption">Some people kissing. So cute.</div>
+					</div>
+					<div class="second_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/1.jpg" alt="walking through grass">
+						<div class="caption">A bride walking away.</div>
+					</div>
+					<div class="horizontal_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/2.jpg" alt="man danceing">
+						<div class="caption">A groom getting jiggy with it.</div>
+					</div>
+					<div class="horizontal_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/weddings/3.jpg" alt="couple danceing">
+						<div class="caption">The parents of the bride hugging it out.</div>
+					</div>
+			</section>
+
+			<section id="headshots" class="black_border second_container clearfix">
+				<div class="tab">Headshots / Portraits</div>
+					<div class="first_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/headshots/main.jpg" alt="emo man">
+						<div class="caption">Some dude who is either confused, or about to cry.</div>
+					</div>
+					<div class="second_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/headshots/1.jpg" alt="happy man">
+						<div class="caption">Lookin sharp.</div>
+					</div>
+					<div class="horizontal_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/headshots/2.jpg" alt="smirky woman">
+						<div class="caption">Some woman who looks happy.</div>
+					</div>
+					<div class="horizontal_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/headshots/3.jpg" alt="pouty man">
+						<div class="caption">You talkin to me?</div>
+					</div>
+			</section>
+
+
+			<section id="music" class="black_border second_container clearfix">
+				<div class="tab">Music</div>
+					<div class="first_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/music/main.jpg" alt="soulful guitar">
+						<div class="caption">Some dude lost in the music.</div>
+					</div>
+					<div class="second_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/music/1.jpg" alt="drummer">
+						<div class="caption">A drummer doing his drumming thing.</div>
+					</div>
+					<div class="horizontal_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/music/2.jpg" alt="band performing">
+						<div class="caption">Some people singing...with a bunch of lights.</div>
+					</div>
+					<div class="horizontal_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/music/3.jpg" alt="guitarist">
+						<div class="caption">Slappin da bass</div>
+					</div>
+			</section>
+
+
+			<section id="art" class="black_border second_container clearfix">
+				<div class="tab">Everything Else</div>
+					<div class="first_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/art/main.jpg" alt="two dudes" class="gallery_img">
+						<div class="caption">Two guys not sure where to go.</div>
+					</div>
+					<div class="second_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/art/1.jpg" alt="fancy lady" class="gallery_img">
+						<div class="caption">Cool lady with cool tattoos.</div>
+					</div>
+					<div class="horizontal_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/art/2.jpg" alt="birds" class="gallery_img">
+						<div class="caption">Some seagulls on the lookout for free food.</div>
+					</div>
+					<div class="horizontal_img gallery_img">
+						<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/art/3.jpg" alt="baby" class="gallery_img">
+						<div class="caption">A toddler looking super intense.</div>
+					</div>
+			</section>
+		</main>
+			<section id="booking" class ="black_border clearfix">
+				<div class="container">
+					<h2>Bookings and Prints</h2>
+						<div class="pricing">
+							<h3>Weddings</h3>
+							<text>For $1 Million Ryan will shoot your wedding. That rate might seem high, but you probably don't realize what a pain it is to shoot a wedding.</text>
+							<button>Book Now!</button>
+						</div>
+
+						<div class="pricing">
+							<h3>Headshots</h3>
+							<text>If you're Ryan's friend, he'll do your headshot. Or if you're a friend of a friend. Or a friend of a friend of a friend.</text>
+							<button>Book Now!</button>
+						</div>
+
+						<div class="pricing">
+							<h3>Concerts</h3>
+							<text>If Ryan likes your music, and happens to show up with his camera, he'll take pictures. Otherwise wedding rates apply.</text>
+							<button>Book Now!</button>
+						</div>
+
+						<div class="pricing">
+							<h3>Everything Else</h3>
+							<text>Ryan shoots whatever he likes, and if you don't like it then he doesn't care. If that sounds good to you then...</text>
+							<button>Book Now!</button>
+						</div>
 				</div>
-			</div>
-		</section>
+			</section>
+
+			<footer>
+				<div class ="footer_about">
+					<img src="https://dl.dropboxusercontent.com/u/2179993/fewd/lab_1/images/logo.png">
+					<text>Ryan is a coder and photographer out of Washington DC. He shoots when he feels like it, but if you want to hit him up and talk about Front-End Web Development feel free!</text>
+				</div><div class="footer_nav_copyright">
+					<nav>
+						<a href="#">Facespace</a>
+						<a href="#">Tweeter</a>
+						<a href="#">Instapic</a>
+						<a href="#">E-Mail</a>
+					</nav>
+					<div class="copy_right">All images are &#169; 2014 by Ryan Lynch. Unauthorized use prohibited, all rights reserved.</div>
+				</div>
+				
+			</footer>
+
 	</body>
 </html>

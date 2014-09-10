@@ -4,7 +4,7 @@
 *:before {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
-          box-sizing: border-box;
+          box-sizing: border-box; 
 }
 
 .clearfix:before, .clearfix:after { content: " "; display: table; }
@@ -14,12 +14,7 @@ body{
 	font-family:"Lato";
 	margin:0;
 	color:#000;
-}
-
-.ghost_header{
-	height:44px;
-	display:block;
-	width:100%;
+	font-size:16px;
 }
 
 a{
@@ -30,163 +25,348 @@ a:hover{
 	cursor: pointer;
 }
 
+.absolute{
+	position:absolute;
+}
+
 li{
 	list-style: none;
 }
+
+
+
+/*-------Header----------*/
+
 
 .top_bar {
 	background-color:#fff;
 	top:0;
 	position:fixed;
-	height:44px; /* 44px / 16px = em value */
-	border-bottom: 5px solid #000;
+	height:2.75rem; /* 44px / 16px = em value */
+	border-bottom: .3rem solid #000;
 	text-align:right;
 	width:100%;
 	z-index:9;
 }
 
-.top_nav > a {
-	color: #000;
-	display: inline-block;
-	line-height: 39px;
-	padding-right:20px;
-	text-transform: uppercase;
-	font-size:20px;
-}
+	.top_nav > a {
+		color: #000;
+		display: inline-block;
+		line-height: 2.44rem;
+		padding-right:1.25rem;
+		text-transform: uppercase;
+		font-size:1.25rem;
+	}
 
-.logo{
-	position:absolute;
-	top: 4px;
-	left:20px;
-	z-index:10;
-}
+	.logo{
+		position:absolute;
+		top: .25rem;
+		left:1.25rem;
+		z-index:10;
+		}
+
+
+/*-------End of Header----------*/
+
+
 
 .gallery{
 	width:100%;
 	position:relative;
 	display:block;
-	overflow:hidden;
-	height:800px;
+	height:50rem;
+	margin-top:2.75rem;
+	max-width:2000px;
+	background-color:#000;
 }
 
-.window {
-	width:25%;
-	position:relative;
-	display:inline-block;
-	height:100%;
-	overflow:hidden;
-	background-color:#000
-}
-	.window>a>img{
-		margin: 0 auto;
-		position:absolute;
+	.col_one-four{
+		width: 25%;
+		float:left;
 	}
 
-	.window>a{
+	.gallery>a {
+		height:100%;
+		overflow:hidden;
+		position:relative;
+		float:left;
+	}
+
+	.gallery>a>img{
 		opacity:0.8;
 	}
 
-	.window>a:hover{
+
+	.gallery>a:hover img{
+		opacity:1;
+	}
+
+	.gallery>a:hover nav{
 		opacity:1;
 	}
 
 	.wedding_img{
-		right:-545px;
+		right:-36.56rem;
 	}
 
 	.headshots_img{
-		right:-460px;
+		right:-29.06rem;
 	}
 
 	.music_img{
-		right:-545px;
+		right:-33.13rem;
 	}
 
 	.art_img{
-		right:-600px;	
+		right:-37.5rem;	
 	}
 
-	.window>a>nav{
-		margin-top:580px;
-		position:absolute;
-		height:44px;
+	.gallery>a>nav{
+		margin-top:36.25rem;
+		height:2.75rem;
 		width:100%;
 		background-color:#fff;
  		text-transform: uppercase;
- 		font-size:20px;
+ 		font-size:1.25rem;
  		text-align: center;
- 		line-height:39px;
- 		border-bottom: 5px solid #000;
+ 		line-height:2.44rem;
+ 		border-bottom: .31rem solid #000;
  		opacity:0.8;
 		color:#000;
+		float:left;
+		position: relative;
+		clear:both;
 	}
-.black_bar{
-	height:44px;
-	display:block;
-	background-color:#000;
-	position:static;
+
+.black_border{
+	border-top:44px solid #000;
 }
 
 #about{
 	background-color:#fff;
-	position:relative;
-	height:544px;
-	overflow:hidden;
+	display:block;
 }
 
 	.container{
-		width:1000px;
+		width:62.5rem;
 		margin: 0 auto;
 		position:relative;
-		background-size:contain;
+		clear:both;
+		overflow:hidden;
+		display:block;
 	}
-	.container>img{
-		position: absolute;
-		width:500px;
 
+	.ryan_image_container{
+		float:left;
+		width:50%;
+		position:relative;
+		height:31.25rem;
 	}
-	.container>.ryan_face:hover{
+
+	.ryan_image_container:hover .ryan_face{
 		display:none;
 	}
+
+	.ryan_silly_face{
+		position:absolute;
+		width:100%;
+	}
+		.ryan_face{
+		position:absolute;
+		width:100%;
+	}
+	
 	.text_container{
-		float:right;
-		width:500px;
-	}
-
-.tab{
-	background-color:#000;
-	margin-left:100px;
-	position:absolute;
-	z-index:10;
-	color:#fff;
-	padding:10px;
-}
-
-.second_container{
-	background-size:contain;
-	display:block;
-	overflow:hidden;
-	background-color:#000;
-}
-	.first_img_wedding{
+		float:left;
 		width:50%;
-		display:inline-block;
+		height:31.25rem;
+		position:relative;
 	}
-	.second_img_wedding{
-		width:25%;
-		display:inline-block;
+
+
+
+main {
+	background-color:#000;
+}
+
+	.tab{
+		background-color:#000;
+		margin-left:6.25rem;
+		position:absolute;
+		color:#fff;
+		padding:.625rem;
+		z-index: 8;
 	}
-	.stacked_img{
-		background-size:contain;
-		display:inline-block;
-		overflow:hidden;
-		width:25%;
+
+	.second_container{
+		clear:both;
+		position:relative;
+		display:block;
 	}
-		.third_img_wedding{
+
+		.gallery_img{
 			display:block;
+			position:relative;
 			width:100%;
+			padding-right: 4px;
+			background-color:#000;
 		}
-		.fourth_img_wedding{
+
+		.gallery_img img{
+			width:100%;
 			display:block;
-			width:100%;
 		}
+
+		.first_img{
+			width:50%;
+			float:left;
+			position:relative;
+			padding-left: 4px;
+			background-color:#000;
+		}
+		.second_img{
+			width:25%;
+			float:left;
+			position:relative;
+		}
+			.horizontal_img{
+				float:left;
+				position:relative;
+				width:25%;
+				padding-bottom:4px;
+				background-color:#000;
+				display:block;
+			}
+
+		.caption{
+			color:#fff;
+			background-color:rgba(0, 0, 0, 0.6);
+			width:100%;
+			text-align:left;
+			font-size:1em;
+			position:absolute;
+			z-index:8;
+			display:none;
+			bottom:0px;
+			margin-left:-4px;
+			padding: 5px 10px;
+		}
+
+		.horizontal_img:hover .caption, .second_img:hover .caption, .first_img:hover .caption {
+			display: block;
+		}
+
+	#headshot{
+		display:block;
+		}
+
+#booking{
+	clear:both;
+}
+
+#booking .container {
+	height:300px;
+}
+
+h2{
+	text-align:center;
+	display:block;
+
+}
+
+.pricing{
+	position: relative;
+	display: block;
+	float: left;
+	border-top: 1px solid #000;
+	width: 23%;
+	height: 214px;
+	margin-left: 20px;
+}
+
+h3{
+	text-align: center;
+}
+
+text{
+	text-align: center;
+	color:#000;
+	position:relative;
+	display:block;
+}
+
+button{
+	background-color: #000;
+	padding: 10px 20px;
+	text-align: center;
+	color: #FFF;
+	display: block;
+	position: absolute;
+	left: 22%;
+	border: 0px none;
+	font-size: 1rem;
+	bottom: 0px;
+}
+
+button:hover{
+	cursor:pointer;
+}
+
+footer{
+	background-color:#000;
+	clear:both;
+	display:block;
+	position:relative;
+	color:#fff;
+}
+
+.footer_about{
+	position:relative;
+	display:inline-block;
+	clear:both;
+	border-right:1px solid #fff;
+	width:50%;
+}
+
+.footer_about>img{
+	position:relative;
+	float:left;
+}
+
+.footer_about>text{
+	color: #FFF;
+	float: left;
+	position: relative;
+	width: 80%;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.footer_nav_copyright{
+	position:relative;
+	display:inline-block;
+	clear:both;
+	width:50%;
+}
+
+.footer_nav_copyright>nav{
+	float:left;
+	position:relative;
+	width:100%;
+}
+.footer_nav_copyright>nav>a{
+	text-decoration: none;
+	margin-left:20px;
+	color:#fff;
+}
+
+.copy_right{
+	float:left;
+	position:relative;
+	width:100%;
+}
+
+
+
+
+
