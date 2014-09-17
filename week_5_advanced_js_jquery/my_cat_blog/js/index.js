@@ -1,3 +1,4 @@
+var html = '';
 var posts = [
 	{
 		image: 'http://placekitten.com/g/200/200',
@@ -17,3 +18,26 @@ var posts = [
 		snippet: 'OMG people, are you ready for some heavy duty cuteness? I know I am. Check out these cats! I can\'t even handle this. Too cute!'
 	}
 ];
+
+function generatePost(foo){
+	var fragment = '';
+
+				fragment +='<div class="post clearfix">';
+				fragment += '<img class="post-image float-left" src="'+ foo.image +'">';
+				fragment +='<div class="post-content float-left">';
+				fragment +='<h3 class="post-title">' + foo.title + '</h3>';
+				fragment +='<p>';
+				fragment +=	foo.snippet;
+				fragment +='</p>';
+				fragment +='</div>';
+				fragment +='</div>';
+
+
+	return fragment;
+}
+
+for (var i = 0; i < posts.length; i++){
+	html += generatePost(posts[i]);
+}
+
+document.getElementById('posts').innerHTML = html;//.innerHTML publishes th javascript into HTML 
