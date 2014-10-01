@@ -350,3 +350,47 @@ footer {
 	margin-top: 15px;
 	font-size: 0.7em;
 }
+
+.lightbox-background{
+	background-color: rgba(0, 0, 0, .5);
+	position:fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	z-index:3;
+}
+
+.lightbox{
+	z-index: 4;
+	position: fixed;
+	top: 0;
+	background-color:#000;
+	color:#fff;
+	left:50%;
+	margin:-;
+}
+
+.lightbox-image{
+	height:500;
+}
+
+.lightbox-top-bar{
+	text-align:right;
+}
+
+.lightbox-bottom-bar{
+	text-align:center;
+}
+
+.lightbox-top-bar, .lightbox-bottom-bar{
+	font-size:1.2em;
+}
+
+.lightbox-next, .lightbox-previous{
+	display:inline-block;
+	padding:8px;
+}
+
+.hidden{
+	display:none;
+}

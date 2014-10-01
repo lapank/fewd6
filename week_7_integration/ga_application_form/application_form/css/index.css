@@ -1,0 +1,40 @@
+body{
+	font-family:arial;
+	background-image: url(../images/background.png);
+}
+
+form{
+	background-color: rgba(255,255,255,.8);
+	width:600px;
+	border-radius:25px;
+	box-shadow: 0px 0px 30px #888888;
+	margin:0 auto;
+	border:1px #888;
+}
+
+header{
+	color:#666;
+	font-size: 16px;
+	text-align: center;
+	border-top-right-radius: 25px; 
+	border-top-left-radius: 25px;
+	padding: 20px 0px;
+	background-color:#888;
+	background: -webkit-linear-gradient(#fff, #888); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#fff,  #888); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff,  #888); /* For Firefox 3.6 to 15 */	  background: linear-gradient(#fff,  #888); /* Standard syntax */
+}
+
+.label{
+	left:0px;
+}
+
+.input{
+	left:50px;
+}
+
+input, select, textarea{
+	background-color:rgb(250, 213, 152);
+	border-radius:10px;
+}
+
